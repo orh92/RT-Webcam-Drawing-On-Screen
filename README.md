@@ -3,6 +3,7 @@ real time drawing on screen from main webcam.
 using color classification, shapes detection, contour detection.
 to use this project need to do the follow things:
 packages dipendencies:
+![libraries and dependencies](https://user-images.githubusercontent.com/44766935/111077615-49378d80-84fa-11eb-8068-ebb0ee1f1c26.png)
 
 Color classification:
 
