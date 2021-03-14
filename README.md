@@ -14,6 +14,7 @@ Color classification:
 > ![Color Start](https://user-images.githubusercontent.com/44766935/111077461-8bac9a80-84f9-11eb-9217-3b1f10eff5fb.png)
 > 
 to find the right values you need to change the trackbar values with your mouse.
+
 to find the right color values you need to see only the wanted color in white.
 
 > after found the wanted color by using the trackbar values:
