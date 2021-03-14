@@ -16,6 +16,8 @@ Color classification:
 
 Contour detection:
 
+![shapes contour detection](https://user-images.githubusercontent.com/44766935/111077659-7dab4980-84fa-11eb-8284-b944ec0124a5.png)
+
 Shapes detection:
 
 Drawing on screen:
