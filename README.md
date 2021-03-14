@@ -23,7 +23,7 @@ to find the right color values you need to see only the wanted color in white.
 
 Contour detection:
 
-Each shape contours are drwan on green color.
+Each shape contours are drwan on blue color.
 
 ![shapes contour detection](https://user-images.githubusercontent.com/44766935/111077659-7dab4980-84fa-11eb-8284-b944ec0124a5.png)
 
