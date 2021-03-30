@@ -6,3 +6,6 @@
 .idea/vcs.xml
 .idea/inspectionProfiles/profiles_settings.xml
 __pycache__/stackImages.cpython-39.pyc
+__pycache__/drawShapes.cpython-39.pyc
+__pycache__/findPoints.cpython-39.pyc
+__pycache__/getContours.cpython-39.pyc

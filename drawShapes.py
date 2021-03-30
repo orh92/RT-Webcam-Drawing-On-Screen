@@ -1,12 +1,15 @@
 import cv2
 import numpy as np
 import PIL.ImageGrab
+from PIL import Image
 from stackImages import stackImages
 from getContours import getContours
 from findPoints import findPoints
 
 class drawShapes:
-    def takeScreenshot():
+    def clearPoints(self):
+        self.myPoints=[]
+    def takeScreenshot(a):
         im = PIL.ImageGrab.grab()
         im.save(r"resources/screen.jpg")
 
@@ -26,8 +29,8 @@ class drawShapes:
     cap.set(4, 480)
     cap.set(10, 150)
 
-    #63 115 0 110 255 165
-    myColors = [[63 ,115, 0 ,110 ,255 ,165]]
+    #0 204 155 179 255 255 orange
+    myColors = [[0, 204, 155, 179, 255, 255]]
     myColorValues = [[255, 0, 0]]
 
     myPoints = []  # points array to draw(x,y,colorId)
@@ -65,11 +68,17 @@ class drawShapes:
                 myPoints = []
                 shapesSize += 1
                 print("shapes number: " + str(shapesSize))
+        for po in myPoints:
+            if po[0]>470 and po[1]>390:
+                myPoints=[]
+
+        clearImg=cv2.imread("resources/clear.jpg") # 420 580
+        imgContour[400:460,480:632]=clearImg
 
         stack = stackImages.stackImages(0.7, [[img, canny], [imgContour, shapesImg]])
         cv2.imshow("Screen", stack)
         cv2.moveWindow("Screen", 300, 50)
         if counter % 10 == 0:
-            takeScreenshot()
+            takeScreenshot(0)
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
